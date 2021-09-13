@@ -1,0 +1,253 @@
+:root {
+  --bg-color: lightblue;
+  --primary-color: #cff0ff;
+  --secondary-color: #037bfc;
+  --red: red;
+  --green: green;
+  --purple: purple;
+  --darkblue: darkblue;
+  --white: white;
+  --sun-1: #EDC655;
+  --sun-2: #fcffad;
+  --sun-3: #f76414;
+  --font-weight_normal: 700;
+}
+body {
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--bg-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-weight_normal);
+}
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight_normal);
+}
+h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight_normal);
+}
+a:visited {
+  color: var(--red);
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+a:active {
+  color: var(--green);
+}
+a {
+  color: var(--purple);
+}
+form {
+  border: none;
+  font-family: inherit;
+  color: var(--darkblue);
+  text-decoration: none;
+  padding: 100px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.button, button {
+  border: none;
+  display:inline-block;
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button:hover, .button:focus,
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.about-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-table{
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-header {
+  display: flex;
+  width: 100%;
+}
+.nav-list_item-active {
+  text-decoration: none;
+}
+.nav-list {
+  list-style-type: none;
+}
+.nav-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.page-header_item {
+  flex: 0 1 200px;
+}
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+.img-logo {
+  width: 200px;
+  margin-right: 40px;
+ }
+.profile_img {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+ }
+ .profile {
+   max-width: 700px;
+   margin: 0 auto;
+ }
+ .about-table {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+ }
+ .about-cv {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+ }
+ .about-animation {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+ }
+ @keyframes color-change {
+   0% {
+     fill: var(--sun-1);
+   }
+   50% {
+     fill: var(--sun-2);
+   }
+   100% {
+     fill: var(--sun-3);
+   }
+ }
+
+ .beach{
+   width: 700px;
+   margin-right: 40px;
+  }
+ .sun {
+   animation: 4s color-change infinite alternate linear;
+ }
+
+ @keyframes cloud-move {
+   from {
+     transform: translate(0, 50px);
+   }
+   to {
+     transform: translate(200px, 50px);
+   }
+ }
+
+ .cloud-1 {
+   animation-duration: 20s;
+   animation-name: cloud-move;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: linear;
+ }
+ @keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-2 {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
+ .grid {
+  display: grid;
+}
+.grid__item {
+  background-color: var(--primary-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+/* for browsers without grid support cap*/
+.grid__item {
+ display: inline-block;
+ width: 33%;
+}
+/* for browsers without grid support cap end */
+
+@supports (display: grid) {
+.grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 15px;
+   margin: 0;
+}
+.grid__item {
+   background-color: #cff0ff;
+   width: auto;
+   min-height: auto;
+   margin: 0;
+}
+}
+@media all and (max-width: 500px) {
+   .grid {
+     grid-template-columns: 1fr;
+   }
+ }
+@media all and (min-width: 501px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+ @media all and (max-width: 750px) {
+   .grid {
+     grid-gap: 10px;
+   }
+   .grid__item:last-child {
+     grid-column: auto / auto;
+     grid-row: auto / auto;
+   }
+   h1 {
+     font-size: 22px;
+   }
+ }
+ .form_style {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+ }
+.page_footer {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
