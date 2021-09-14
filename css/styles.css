@@ -182,6 +182,22 @@ button:focus {
   margin-right: 40px;
 }
 
+@media all and (max-width: 500px) {
+  .beach {
+    width: 350px;
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .about-animation {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    flex-flow: column wrap;
+  }
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
