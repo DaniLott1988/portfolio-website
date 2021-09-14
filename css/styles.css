@@ -213,7 +213,7 @@ button:hover, button:focus {
    width: auto;
    min-height: auto;
    margin: 0;
-}
+  }
 }
 @media all and (max-width: 500px) {
    .grid {
@@ -242,7 +242,7 @@ button:hover, button:focus {
    justify-content: center;
    align-content: center;
  }
-.page_footer {
+ .page_footer {
   clear: both;
   display: flex;
   flex-wrap: wrap;
