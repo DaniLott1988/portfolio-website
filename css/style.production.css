@@ -233,6 +233,30 @@ button:focus {
   margin-right: 40px;
 }
 
+@media all and (max-width: 500px) {
+  .beach {
+    width: 350px;
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .about-animation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+}
+
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
   animation: 4s color-change infinite alternate linear;
