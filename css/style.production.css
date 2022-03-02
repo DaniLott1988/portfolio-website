@@ -6,6 +6,7 @@
 */
 
 body {
+  text-align: center;
   padding: 10px;
   margin: 10px;
   background-color: lightblue;
@@ -13,6 +14,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -152,16 +154,33 @@ button:focus {
 }
 
 .profile_img {
-  float: left;
   width: 250px;
-  margin-right: 40px;
   border-radius: 50%;
 }
 
 .profile {
-  max-width: 700px;
-  margin: 0 auto;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-right: 40px;
 }
+
 
 .about-table {
   display: -webkit-box;
@@ -172,6 +191,8 @@ button:focus {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 .about-cv {
@@ -369,7 +390,27 @@ button:focus {
     width: auto;
     min-height: auto;
     margin: 0;
+    margin-bottom: 10px;
   }
+}
+
+.grid_style {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;  
 }
 
 @media all and (max-width: 500px) {
@@ -410,6 +451,10 @@ button:focus {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+}
+
+.contact_me {
+  margin-bottom: 15px;
 }
 
 .page_footer {
