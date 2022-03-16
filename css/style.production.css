@@ -9,8 +9,9 @@ body {
   text-align: center;
   padding: 10px;
   margin: 10px;
-  background-color: lightblue;
+  background-color: white;
   font-family: 'Raleway', sans-serif;
+  color: blue;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -32,21 +33,13 @@ h3 {
   font-weight: 700;
 }
 
-a:visited {
-  color: red;
-}
-
 a:hover,
 a:focus {
   text-decoration: none;
 }
 
-a:active {
-  color: green;
-}
-
 a {
-  color: purple;
+  color: blue;
 }
 
 form {
@@ -122,8 +115,16 @@ button:focus {
   width: 100%;
 }
 
-.nav-list_item-active {
-  text-decoration: none;
+.nav-list_item {
+  margin: 0.3em;
+  padding: 0.5em;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 9em;
+  background: blue;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .nav-list {
@@ -411,6 +412,30 @@ button:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;  
+}
+
+.code-link {
+  margin: 0.3em;
+  padding: 0.5em;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 9em;
+  background: blue;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.app-link {
+  margin: 0.3em;
+  padding: 0.5em;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 9em;
+  background: blue;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .key-skills {
