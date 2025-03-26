@@ -1,117 +1,174 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      Danielle Lott - Web Developer Portfolio
-    </title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work - Danielle Lott - Data Scientist Portfolio</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-  <body>
-    <header class="page-header">
-      <img src="img/logo_small.png" alt="Logo containing the owner's name, it reads: Danielle Lott" class="page-header_item img-logo">
-      <nav class="page-header_item">
-        <ul role="menubar" class="nav-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="nav-list_item">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="nav-list_item">About</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="nav-list_item nav-list_item-active">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="nav-list_item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <h1>
-        Work
-      </h1>
-      <div class="grid">
-        <!--Grid items will be input here -->
-        <div class="grid__item">
-          <h2>Hydro-Pump-Dex</h2>
-          <div class="grid_style">
-            <img src="img/hydropumpdex.png" alt="screenshot of the application Hydro Pump Dex" class="app-page-img">
-            <p>
-              Within this project, I was responsible for the frontend. It’s written in JS, jQuery and Bootstrap. Additionally, I've created the HTML and CSS templates.
-            </p>
-            <a href="https://github.com/DaniLott1988/simple-js-app" class="code-link">See project on GitHub</a>
-            <a href="https://danilott1988.github.io/simple-js-app/" class="app-link">App's page</a>
+<body>
+  <header class="page-header">
+    <a href="index.html" class="logo page-header_item">
+      <img src="img/logo_small.png" alt="Logo containing the owner's name, it reads: Danielle Lott" class="img-logo">
+    </a>
+    <nav class="page-header_item">
+      <ul role="menubar" class="nav-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="nav-list_item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="nav-list_item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="nav-list_item nav-list_item-active">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="nav-list_item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="work-section">
+      <h1>My Work</h1>
+      
+      <div class="work-category">
+        <h2>Data Science Projects</h2>
+        <div class="grid">
+          <!-- Custom Tariff Classification Project -->
+          <div class="grid__item">
+            <div class="grid_style">
+              <h3>Custom Tariff Classification App</h3>
+              <img src="img/tariff-placeholder.png" alt="Screenshot of Custom Tariff Classification application" class="app-page-img">
+              <p>
+                Developed an interactive application for determining appropriate Custom Tariffs using advanced data quality techniques on internal and external data. Conducted modeling experiments with different models and systems such as RAG to determine the best fit for the project.
+              </p>
+              <p><strong>Technologies:</strong> Python, NLP, RAG, Machine Learning</p>
+              <div class="project-links">
+                <a href="#" class="code-link">View Project Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Business Transaction Pattern Analysis -->
+          <div class="grid__item">
+            <div class="grid_style">
+              <h3>Business Transaction Pattern Analysis</h3>
+              <div class="placeholder-img" style="height: 150px; background-color: #e0f7fa; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-bottom: 1rem;">
+                <span style="color: #0277bd; font-style: italic;">NDA Protected Project</span>
+              </div>
+              <p>
+                Collaborated on a Streamlit application to identify and analyze transaction patterns indicating business activities. The tool provides interactive data visualizations, time-series analysis, and customer clustering to help financial institutions better serve business customers.
+              </p>
+              <p><strong>Technologies:</strong> Python, Pandas, Streamlit, Plotly, Scikit-learn, Statistical Analysis</p>
+              <div class="project-links">
+                <span class="note">Note: Full details limited by NDA</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Customer Review Analysis -->
+          <div class="grid__item">
+            <div class="grid_style">
+              <h3>Customer Review Analysis (Nestlé)</h3>
+              <img src="img/sentiment-placeholder.png" alt="Screenshot of Customer Review Analysis application" class="app-page-img">
+              <p>
+                Created an application that integrates customer feedback from internal and external sources using web scraping techniques. The system delivers actionable insights to improve customer satisfaction and drive product development through comprehensive data analysis.
+              </p>
+              <p><strong>Technologies:</strong> Python, Sentiment Analysis, NLP, Web Scraping, Data Visualization</p>
+              <div class="project-links">
+                <a href="#" class="code-link">View Project Details</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="grid__item">
-          <h2>Movie IT API</h2>
-          <div class="grid_style">
-            <img src="img/movieapimongo.png" alt="screenshot of the application Chat App" class="app-page-img">
-            <p>
-              Within this project, I was responsible for creating the backend. It is a RESTful API that uses Node.js and Express and interacts with MongoDB.
-            </p>
-            <a href="https://github.com/DaniLott1988/movie_api" class="code-link">See project on GitHub</a>
-            <a href="movieITAPICase.html" class="code-link">Case Study</a>
-          </div>
-        </div>
-        <div class="grid__item">
-          <h2>Movie IT Client</h2>
-          <div class="grid_style">
-            <img src="img/movieapiclient.png" alt="screenshot of the application Chat App" class="app-page-img">
-            <p>
-              Within this project, I was responsible for the frontend that ties with the Movie IT API using React and React-Redux. It provides several interfaces views related to movies, including movie description, genre, director data. There is also the option to edit or delete user's profile and add movies to a favorite's list.
-            </p>
-            <a href="https://github.com/DaniLott1988/movieIt_client" class="code-link">See project on GitHub</a>
-          </div>
-        </div>
-        <div class="grid__item">
-          <h2>Meet App</h2>
-          <div class="grid_style">
-            <img src="img/meetapp.png" alt="screenshot of the application Meet App" class="app-page-img">
-            <p>
-              Within this project, I was responsible for creating a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events. It uses Google OAuth2 for login, Amazon Lambda functions for hosting, and Enzyme for code testing.
-            </p>
-            <a href="https://github.com/DaniLott1988/a4meet" class="code-link">See project on GitHub</a>
-            <a href="https://danilott1988.github.io/a4meet/" class="app-link">App's page</a>
-          </div>
-        </div>
-        <div class="grid__item">
-          <h2>Chat App</h2>
-          <div class="grid_style">
-            <img src="img/ChatApp01.jpg" alt="screenshot of the application Chat App" class="app-page-img">
-            <p>
-              Within this project, I was responsible for creating a Native Chat app through the use of React Native and Expo.io. The app can be used by both Android and iOS devices and it offer an interface that not only can send and receive messages, but also share the user's location, photos and images if the user provides permission. Additionally, information is stored using Google Firebase Database and Cloud Storage.
-            </p>
-            <a href="https://github.com/DaniLott1988/ChatApp" class="code-link">See project on GitHub</a>
-          </div>
-        </div>
-        <div class="grid__item">
-          <div class="grid_style">
-            <h2>Movie IT Angular</h2>
-            <img src="img/movieapiangular.png" alt="screenshot of the application Chat App" class="app-page-img">
-            <p>
-              Within this project, I was responsible for the frontend that ties with the Movie IT API as an alternative to the Movie IT done with the MERN stack. It’s written in Angular with Typescript.
-            </p>
-            <a href="https://github.com/DaniLott1988/movieitAngular" class="code-link">See project on GitHub</a>
-            <a href="https://danilott1988.github.io/movieitAngular/movies" class="app-link">App's page</a>
-          </div>
-        </div>
-      </section>
-    <footer class="page_footer">
-      <p>
-        You can find me on:
-      </p>
-        <a href="https://github.com/DaniLott1988"> <img src="img/github-logo.svg" alt="Icon of GitHub to link to my profile there"> </a>
-        <a href="https://www.linkedin.com/in/danielle-lott-3481311b5/"> <img src="img/linkedin-logo.svg" alt="Icon of Linkedin to link to my profile there"> </a>
       </div>
-    </footer>
-  </body>
+      
+      <div class="work-category">
+        <h2>Web Development Projects</h2>
+        <div class="grid">
+          <!-- Movie IT API -->
+          <div class="grid__item">
+            <div class="grid_style">
+              <h3>Movie IT API</h3>
+              <img src="img/movieapimongo.png" alt="Screenshot of the Movie IT API" class="app-page-img">
+              <p>
+                Created a RESTful API that uses Node.js and Express and interacts with MongoDB. It provides movie information and user authentication for a movie enthusiast application.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/DaniLott1988/movie_api" class="code-link">See project on GitHub</a>
+                <a href="movieITAPICase.html" class="code-link">Case Study</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Movie IT Client -->
+          <div class="grid__item">
+            <div class="grid_style">
+              <h3>Movie IT Client</h3>
+              <img src="img/movieapiclient.png" alt="Screenshot of the Movie IT Client" class="app-page-img">
+              <p>
+                Frontend application that ties with the Movie IT API using React and React-Redux. It provides several interface views related to movies, including movie description, genre, director data, and user profile management.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/DaniLott1988/movieIt_client" class="code-link">See project on GitHub</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Meet App -->
+          <div class="grid__item">
+            <div class="grid_style">
+              <h3>Meet App</h3>
+              <img src="img/meetapp.png" alt="Screenshot of the Meet App" class="app-page-img">
+              <p>
+                A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events and features offline functionality.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/DaniLott1988/a4meet" class="code-link">See project on GitHub</a>
+                <a href="https://danilott1988.github.io/a4meet/" class="app-link">App's page</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Chat App -->
+          <div class="grid__item">
+            <div class="grid_style">
+              <h3>Chat App</h3>
+              <img src="img/ChatApp01.jpg" alt="Screenshot of the Chat App" class="app-page-img">
+              <p>
+                A Native Chat app built with React Native and Expo.io for both Android and iOS devices. It offers messaging functionality, location sharing, and media sharing with Firebase backend.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/DaniLott1988/ChatApp" class="code-link">See project on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page_footer">
+    <div class="container">
+      <p>You can find me on:</p>
+      <div class="social-media">
+        <a href="https://github.com/DaniLott1988" target="_blank" rel="noopener noreferrer">
+          <img src="img/github-logo.svg" alt="GitHub Profile">
+        </a>
+        <a href="https://www.linkedin.com/in/danielle-lott-3481311b5/" target="_blank" rel="noopener noreferrer">
+          <img src="img/linkedin-logo.svg" alt="LinkedIn Profile">
+        </a>
+      </div>
+      <p class="copyright">© 2025 Danielle Maria Perez Lott. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
